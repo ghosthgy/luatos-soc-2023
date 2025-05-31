@@ -73,7 +73,7 @@ int luat_camera_setup(int id, luat_spi_camera_t *conf, void * callback, void *pa
 
 	g_s_camera[id].is_running = 0;
 	g_s_camera[id].is_init = 1;
-	g_s_camera[id].is_scan_mode = conf->image_scan;
+	// g_s_camera[id].is_scan_mode = conf->image_scan;
 	g_s_camera[id].image_w = conf->sensor_width;
 	g_s_camera[id].image_h = conf->sensor_height;
 	return 0;
