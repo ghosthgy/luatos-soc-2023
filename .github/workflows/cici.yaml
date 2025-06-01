@@ -38,10 +38,8 @@ jobs:
           export LSPD_MODE=enable
           cd luatos-soc-2023
           xmake -y --root
+          pwd
+          ls
         env:
           PROJECT_NAME: ${{ matrix.csdk_project }}
           CHIP_TARGET: ${{ matrix.csdk_chip }}
-      - name: Zip Outputs
-        run: |
-          cd path/to/luatos-soc-2023/output
-          zip -r firmware-full.zip ./*
