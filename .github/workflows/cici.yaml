@@ -45,8 +45,3 @@ jobs:
         run: |
           cd path/to/luatos-soc-2023/output
           zip -r firmware-full.zip ./*
-      - name: Upload Zipped Artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: firmware-full
-          path: path/to/luatos-soc-2023/output/firmware-full.zip
