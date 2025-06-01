@@ -40,7 +40,9 @@ jobs:
           xmake -y --root
           pwd
           cd out
+          cd example
           ls
+          
         env:
           PROJECT_NAME: ${{ matrix.csdk_project }}
           CHIP_TARGET: ${{ matrix.csdk_chip }}
