@@ -37,6 +37,7 @@ jobs:
           export GCC_PATH=`pwd`/tools/gcc-arm-none-eabi-10-2020-q4-major
           export LSPD_MODE=enable
           cd /home/runner/work/luatos-soc-2023/luatos-soc-2023/luatos-soc-2023ok/luatos-soc-2023
+          chmod 777 /home/runner/work/luatos-soc-2023/luatos-soc-2023/luatos-soc-2023ok/luatos-soc-2023/PLAT/tools/fcelf
           xmake -y --root
           pwd
           cd out
